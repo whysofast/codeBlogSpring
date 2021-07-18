@@ -21,7 +21,7 @@ data class Post (
     @Lob
     var text: String,
 
-    var data: LocalDate
+    var data: LocalDate?
 
 
     )
