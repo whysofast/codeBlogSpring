@@ -57,6 +57,7 @@ class CodeBlogController(
 
         post.data = LocalDate.now()
         codeBlogService.salvar(post)
+        println(post)
         return "redirect:/posts"
     }
 }
