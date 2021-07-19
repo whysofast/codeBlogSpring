@@ -11,15 +11,15 @@ import java.util.UUID
 class CodeBlogService(
     private val postRepository: CodeBlogRepository
 ) : CodeBlogServiceInterface {
-    override fun save(post: Post): Post {
+    override fun salvar(post: Post): Post {
         return postRepository.save(post)
     }
 
-    override fun findById(id: UUID): Post {
+    override fun encontrarPorId(id: UUID): Post {
         return postRepository.findById(id.toString()).get()
     }
 
-    override fun findAll(): List<Post> {
+    override fun encontrarTodos(): List<Post> {
         return postRepository.findAll()
     }
 }
